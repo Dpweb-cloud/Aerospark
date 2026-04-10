@@ -50,7 +50,7 @@ export default function Courses() {
 
   return (
     <div className="pt-20 pb-24">
-      <section className="py-20 bg-[#070e1a] border-b border-white/5">
+      <section className="py-20 border-b" style={{ background: "#051830", borderColor: "rgba(30,111,255,0.12)" }}>
         <div className="container px-4 md:px-6">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Training Programs.</h1>
@@ -105,13 +105,13 @@ export default function Courses() {
 
       <section className="py-12">
         <div className="container px-4 md:px-6">
-          <div className="bg-gradient-to-r from-[#1E6FFF]/20 to-[#0A1628] border border-[#1E6FFF]/30 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="border border-[#1E6FFF]/30 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8" style={{ background: "linear-gradient(135deg, rgba(30,111,255,0.18), #071D40)" }}>
             <div className="max-w-2xl">
               <h2 className="text-3xl font-bold mb-4">Corporate & Enterprise Training</h2>
               <p className="text-gray-300">Need to upskill your entire team? We offer customized cohort training for organizations deploying enterprise drone fleets or managing aerospace engineering projects.</p>
             </div>
             <Link href="/contact" className="shrink-0">
-              <Button size="lg" className="bg-[#1E6FFF] hover:bg-white text-white hover:text-[#0A1628]">
+              <Button size="lg" className="bg-[#1E6FFF] hover:bg-white text-white hover:text-[#071D40]">
                 Discuss Enterprise Training
               </Button>
             </Link>

@@ -42,7 +42,7 @@ export default function Consultancy() {
       <section className="relative py-24 overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/consultancy-bg.png" alt="Consultancy" className="w-full h-full object-cover opacity-20 mix-blend-luminosity" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/90 to-[#0A1628]/80"></div>
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #071D40 0%, rgba(7,29,64,0.9) 60%, rgba(7,29,64,0.75) 100%)" }}></div>
         </div>
         <div className="container relative z-10 px-4 md:px-6">
           <div className="max-w-3xl">
@@ -54,7 +54,7 @@ export default function Consultancy() {
         </div>
       </section>
 
-      <section className="py-20 bg-[#070e1a]">
+      <section className="py-20" style={{ background: "#051830" }}>
         <div className="container px-4 md:px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
@@ -78,7 +78,7 @@ export default function Consultancy() {
           </div>
 
           <Accordion type="single" collapsible className="w-full space-y-4">
-            <AccordionItem value="step-1" className="border border-white/10 bg-white/5 px-6 rounded-lg">
+            <AccordionItem value="step-1" className="border px-6 rounded-lg" style={{ borderColor: "rgba(30,111,255,0.2)", background: "rgba(13,47,110,0.3)" }}>
               <AccordionTrigger className="text-lg font-semibold hover:text-[#1E6FFF] hover:no-underline py-4">
                 Phase 1: Discovery & Needs Analysis
               </AccordionTrigger>
@@ -86,7 +86,7 @@ export default function Consultancy() {
                 We begin by auditing your current operational capabilities, identifying technical gaps, and defining precise success metrics for your drone or aerospace initiative.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="step-2" className="border border-white/10 bg-white/5 px-6 rounded-lg">
+            <AccordionItem value="step-2" className="border px-6 rounded-lg" style={{ borderColor: "rgba(30,111,255,0.2)", background: "rgba(13,47,110,0.3)" }}>
               <AccordionTrigger className="text-lg font-semibold hover:text-[#1E6FFF] hover:no-underline py-4">
                 Phase 2: Strategy & Hardware Selection
               </AccordionTrigger>
@@ -94,7 +94,7 @@ export default function Consultancy() {
                 Based on the analysis, we formulate a comprehensive technical strategy. This includes impartial recommendations for hardware procurement and software architecture.
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="step-3" className="border border-white/10 bg-white/5 px-6 rounded-lg">
+            <AccordionItem value="step-3" className="border px-6 rounded-lg" style={{ borderColor: "rgba(30,111,255,0.2)", background: "rgba(13,47,110,0.3)" }}>
               <AccordionTrigger className="text-lg font-semibold hover:text-[#1E6FFF] hover:no-underline py-4">
                 Phase 3: Regulatory Clearance & SOPs
               </AccordionTrigger>
@@ -102,7 +102,7 @@ export default function Consultancy() {
                 We handle the bureaucratic friction. Our team develops rigorous Standard Operating Procedures (SOPs) and secures necessary permissions from aviation authorities (e.g., DGCA, FAA).
               </AccordionContent>
             </AccordionItem>
-            <AccordionItem value="step-4" className="border border-white/10 bg-white/5 px-6 rounded-lg">
+            <AccordionItem value="step-4" className="border px-6 rounded-lg" style={{ borderColor: "rgba(30,111,255,0.2)", background: "rgba(13,47,110,0.3)" }}>
               <AccordionTrigger className="text-lg font-semibold hover:text-[#1E6FFF] hover:no-underline py-4">
                 Phase 4: Implementation & Training
               </AccordionTrigger>

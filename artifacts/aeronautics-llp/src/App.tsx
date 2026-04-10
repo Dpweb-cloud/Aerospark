@@ -11,12 +11,13 @@ import Consultancy from "@/pages/consultancy";
 import Insights from "@/pages/insights";
 import About from "@/pages/about";
 import Contact from "@/pages/contact";
+import Community from "@/pages/community";
 
 const queryClient = new QueryClient();
 
 function Router() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0A1628] text-white font-sans selection:bg-[#1E6FFF] selection:text-white">
+    <div className="flex flex-col min-h-screen" style={{ background: "linear-gradient(160deg, #071D40 0%, #0A2556 40%, #0D2F6E 100%)", color: "#fff", fontFamily: "'Space Grotesk', sans-serif" }}>
       <Navbar />
       <main className="flex-1">
         <Switch>
@@ -26,6 +27,7 @@ function Router() {
           <Route path="/insights" component={Insights} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <Route path="/community" component={Community} />
           <Route component={NotFound} />
         </Switch>
       </main>

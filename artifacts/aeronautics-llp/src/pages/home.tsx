@@ -57,7 +57,7 @@ export default function Home() {
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/hero-bg.png" alt="Aerospace Command Center" className="w-full h-full object-cover opacity-30 mix-blend-luminosity" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628] via-[#0A1628]/80 to-transparent"></div>
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #071D40 0%, rgba(7,29,64,0.8) 60%, transparent 100%)" }}></div>
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] opacity-20 pointer-events-none mix-blend-overlay"></div>
         </div>
 
@@ -107,7 +107,7 @@ export default function Home() {
       </section>
 
       {/* VALUE PROPOSITION */}
-      <section className="py-24 bg-[#070e1a] relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden" style={{ background: "#051830" }}>
         <div className="container px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Command Level Expertise.</h2>
@@ -132,7 +132,7 @@ export default function Home() {
                 desc: "Unbiased, technical advisory for enterprise drone integration and fleet management."
               }
             ].map((feature, i) => (
-              <div key={i} className="group p-8 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-[#1E6FFF]/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(30,111,255,0.1)]">
+              <div key={i} className="group p-8 rounded-2xl border border-white/10 hover:border-[#1E6FFF]/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(30,111,255,0.1)]" style={{ background: "rgba(13,47,110,0.35)" }}>
                 <div className="w-12 h-12 rounded-lg bg-[#1E6FFF]/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                   <feature.icon className="w-6 h-6 text-[#1E6FFF]" />
                 </div>
@@ -204,7 +204,7 @@ export default function Home() {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="py-24 bg-[#070e1a]">
+      <section className="py-24" style={{ background: "#051830" }}>
         <div className="container px-4 md:px-6 max-w-4xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Mission Briefing: FAQ</h2>
@@ -234,7 +234,7 @@ export default function Home() {
                 a: "Yes. We design custom training modules for enterprise teams, covering everything from basic flight operations to complex fleet management and data analytics."
               }
             ].map((faq, i) => (
-              <AccordionItem key={i} value={`item-${i}`} className="border border-white/10 bg-white/5 px-6 rounded-lg data-[state=open]:border-[#1E6FFF]/50 transition-colors">
+              <AccordionItem key={i} value={`item-${i}`} className="border px-6 rounded-lg data-[state=open]:border-[#1E6FFF]/50 transition-colors" style={{ borderColor: "rgba(30,111,255,0.2)", background: "rgba(13,47,110,0.3)" }}>
                 <AccordionTrigger className="text-left font-semibold text-white hover:text-[#1E6FFF] hover:no-underline py-4">
                   {faq.q}
                 </AccordionTrigger>

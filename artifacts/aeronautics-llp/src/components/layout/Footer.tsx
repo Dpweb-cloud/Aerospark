@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 
 export function Footer() {
   return (
-    <footer className="bg-[#070e1a] border-t border-white/5 pt-16 pb-8 relative overflow-hidden">
+    <footer className="pt-16 pb-8 relative overflow-hidden" style={{ background: "#040E22", borderTop: "1px solid rgba(30,111,255,0.12)" }}>
       {/* Decorative grid */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20 pointer-events-none mix-blend-overlay"></div>
       
@@ -14,7 +14,7 @@ export function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded bg-gradient-to-br from-[#1E6FFF] to-[#0A1628] flex items-center justify-center">
+              <div className="w-8 h-8 rounded flex items-center justify-center" style={{ background: "linear-gradient(135deg, #1E6FFF, #071D40)" }}>
                 <Rocket className="text-white w-4 h-4 -rotate-45" />
               </div>
               <span className="font-bold text-lg tracking-tight">AERONAUTICS<span className="text-[#1E6FFF]">.LLP</span></span>
@@ -34,12 +34,13 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-400 hover:text-[#1E6FFF] transition-colors text-sm">Home</Link></li>
-              <li><Link href="/courses" className="text-gray-400 hover:text-[#1E6FFF] transition-colors text-sm">Courses</Link></li>
-              <li><Link href="/consultancy" className="text-gray-400 hover:text-[#1E6FFF] transition-colors text-sm">Consultancy</Link></li>
-              <li><Link href="/insights" className="text-gray-400 hover:text-[#1E6FFF] transition-colors text-sm">Insights</Link></li>
-              <li><Link href="/about" className="text-gray-400 hover:text-[#1E6FFF] transition-colors text-sm">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-[#1E6FFF] transition-colors text-sm">Contact</Link></li>
+              <li><Link href="/" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">Home</Link></li>
+              <li><Link href="/courses" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">Courses</Link></li>
+              <li><Link href="/consultancy" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">Consultancy</Link></li>
+              <li><Link href="/insights" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">Insights</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">About Us</Link></li>
+              <li><Link href="/community" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">Community</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-[#60A5FA] transition-colors text-sm">Contact</Link></li>
             </ul>
           </div>
 
