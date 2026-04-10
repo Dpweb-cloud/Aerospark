@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "c3KM9yvY03LuiaorNoHuS"
+uri = "file://artifacts/aeronautics-llp/public/images/hero-bg.png"
+type = "image"
+title = "Aerospace command center hero"
+
+[[generated]]
+id = "TyQJNqxrtfOfX33u1qAW5"
+uri = "file://artifacts/aeronautics-llp/public/images/drone-tech.png"
+type = "image"
+title = "Drone flying over landscape"
+
+[[generated]]
+id = "PuTf7UAE8AhkxWAu3uSIv"
+uri = "file://artifacts/aeronautics-llp/public/images/space-systems.png"
+type = "image"
+title = "Satellite in orbit"
+
+[[generated]]
+id = "eJeoDbC03hYNAbVtNvtLv"
+uri = "file://artifacts/aeronautics-llp/public/images/consultancy-bg.png"
+type = "image"
+title = "Team in aerospace lab"
