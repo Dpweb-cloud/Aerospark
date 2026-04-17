@@ -17,7 +17,7 @@ const queryClient = new QueryClient();
 
 function Router() {
   return (
-    <div className="flex flex-col min-h-screen" style={{ background: "linear-gradient(160deg, #071D40 0%, #0A2556 40%, #0D2F6E 100%)", color: "#fff", fontFamily: "'Space Grotesk', sans-serif" }}>
+    <div className="flex flex-col min-h-screen" style={{ background: "linear-gradient(160deg, #f0f9ff 0%, #ffffff 42%, #e0f2fe 100%)", color: "#0f172a", fontFamily: "'Space Grotesk', sans-serif" }}>
       <Navbar />
       <main className="flex-1">
         <Switch>

@@ -40,52 +40,52 @@ function AnimatedCounter({ end, label, suffix = "" }: { end: number, label: stri
   }, [isVisible, end]);
 
   return (
-    <div ref={ref} className="text-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm relative overflow-hidden group">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#1E6FFF]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-      <div className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">
+    <div ref={ref} className="text-center p-6 rounded-2xl bg-white border border-sky-200 backdrop-blur-sm relative overflow-hidden group shadow-sm">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#f97316]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="text-4xl md:text-5xl font-bold text-slate-900 mb-2 tracking-tight">
         {count}{suffix}
       </div>
-      <div className="text-sm text-gray-400 font-medium tracking-wide uppercase">{label}</div>
+      <div className="text-sm text-slate-500 font-medium tracking-wide uppercase">{label}</div>
     </div>
   );
 }
 
 export default function Home() {
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-gradient-to-b from-sky-50 via-white to-sky-100 text-slate-900">
       {/* HERO SECTION */}
       <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/hero-bg.png" alt="Aerospace Command Center" className="w-full h-full object-cover opacity-30 mix-blend-luminosity" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #071D40 0%, rgba(7,29,64,0.8) 60%, transparent 100%)" }}></div>
-          <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] opacity-20 pointer-events-none mix-blend-overlay"></div>
+          <img src="/images/hero-bg.png" alt="Aerospace Command Center" className="w-full h-full object-cover opacity-10" />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(to top, #f8fbff 0%, rgba(248,251,255,0.92) 60%, rgba(248,251,255,0.75) 100%)" }}></div>
+          <div className="absolute inset-0 bg-[linear-gradient(rgba(30,111,255,0.06)_1px,transparent_1px),linear-gradient(90deg,rgba(30,111,255,0.06)_1px,transparent_1px)] bg-[size:60px_60px] opacity-40 pointer-events-none"></div>
         </div>
 
-        <div className="container relative z-10 px-4 md:px-6">
+        <div className="container relative z-10 px-4 md:px-6 mx-auto">
           <div className="max-w-4xl mx-auto text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-[#1E6FFF] shadow-[0_0_20px_rgba(30,111,255,0.1)]">
-              <span className="w-2 h-2 rounded-full bg-[#1E6FFF] animate-pulse"></span>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-sky-200 text-sm font-medium text-[#f97316] shadow-[0_8px_30px_rgba(249,115,22,0.16)]">
+              <span className="w-2 h-2 rounded-full bg-[#f97316] animate-pulse"></span>
               Elevating Aerospace Intelligence
             </div>
             
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-white leading-[1.1]">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-slate-900 leading-[1.1]">
               Precision Meets <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E6FFF] to-[#60A5FA]">Purpose.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0284c7] to-[#f97316]">Purpose.</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
               High-authority aerospace coaching and elite drone consultancy. 
               Gain security clearance to world-class industry knowledge and operational excellence.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <Link href="/contact">
-                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-[#1E6FFF] hover:bg-[#1E6FFF]/90 text-white border-0 shadow-[0_0_20px_rgba(30,111,255,0.4)] hover:shadow-[0_0_30px_rgba(30,111,255,0.6)] transition-all">
+                <Button size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-[#f97316] hover:bg-[#ea580c] text-white border-0 shadow-[0_0_20px_rgba(249,115,22,0.38)] hover:shadow-[0_0_30px_rgba(249,115,22,0.55)] transition-all">
                   Book a Free Consultation
                 </Button>
               </Link>
               <Link href="/courses">
-                <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-base border-white/20 hover:bg-white/5 text-white bg-transparent">
+                <Button size="lg" variant="outline" className="w-full sm:w-auto h-14 px-8 text-base border-sky-300 hover:bg-sky-50 text-slate-900 bg-white">
                   Explore Programs
                 </Button>
               </Link>
@@ -96,7 +96,7 @@ export default function Home() {
 
       {/* STATS SECTION */}
       <section className="py-20 relative z-20 -mt-20">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             <AnimatedCounter end={500} label="Students Trained" suffix="+" />
             <AnimatedCounter end={50} label="Industry Partners" suffix="+" />
@@ -107,11 +107,11 @@ export default function Home() {
       </section>
 
       {/* VALUE PROPOSITION */}
-      <section className="py-24 relative overflow-hidden" style={{ background: "#051830" }}>
-        <div className="container px-4 md:px-6 relative z-10">
-          <div className="max-w-3xl mb-16">
+      <section className="py-24 relative overflow-hidden bg-white">
+        <div className="container px-4 md:px-6 relative z-10 mx-auto">
+          <div className="max-w-3xl mb-16 mx-auto text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6">Command Level Expertise.</h2>
-            <p className="text-gray-400 text-lg leading-relaxed">We bridge the gap between academic theory and industry reality. Our frameworks are built on real-world mission protocols and rigorous engineering standards.</p>
+            <p className="text-slate-600 text-lg leading-relaxed">We bridge the gap between academic theory and industry reality. Our frameworks are built on real-world mission protocols and rigorous engineering standards.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -132,12 +132,12 @@ export default function Home() {
                 desc: "Unbiased, technical advisory for enterprise drone integration and fleet management."
               }
             ].map((feature, i) => (
-              <div key={i} className="group p-8 rounded-2xl border border-white/10 hover:border-[#1E6FFF]/50 transition-all duration-500 hover:shadow-[0_0_30px_rgba(30,111,255,0.1)]" style={{ background: "rgba(13,47,110,0.35)" }}>
-                <div className="w-12 h-12 rounded-lg bg-[#1E6FFF]/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                  <feature.icon className="w-6 h-6 text-[#1E6FFF]" />
+              <div key={i} className="group p-8 rounded-2xl border border-sky-200 hover:border-[#f97316]/50 transition-all duration-500 hover:shadow-[0_16px_30px_rgba(249,115,22,0.16)] bg-sky-50/80">
+                <div className="w-12 h-12 rounded-lg bg-[#f97316]/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto md:mx-0">
+                  <feature.icon className="w-6 h-6 text-[#f97316]" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-400 leading-relaxed">{feature.desc}</p>
+                <h3 className="text-xl font-bold mb-3 text-center md:text-left">{feature.title}</h3>
+                <p className="text-slate-600 leading-relaxed text-center md:text-left">{feature.desc}</p>
               </div>
             ))}
           </div>
@@ -146,14 +146,14 @@ export default function Home() {
 
       {/* FEATURED COURSES PREVIEW */}
       <section className="py-24 relative">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
             <div className="max-w-2xl">
               <h2 className="text-3xl md:text-5xl font-bold mb-4">Training Programs</h2>
-              <p className="text-gray-400 text-lg">Rigorous curriculum designed for the next generation of aerospace engineers and UAV operators.</p>
+              <p className="text-slate-600 text-lg">Rigorous curriculum designed for the next generation of aerospace engineers and UAV operators.</p>
             </div>
             <Link href="/courses">
-              <Button variant="ghost" className="text-[#1E6FFF] hover:text-[#1E6FFF] hover:bg-[#1E6FFF]/10 group">
+              <Button variant="ghost" className="text-[#f97316] hover:text-[#ea580c] hover:bg-[#f97316]/10 group">
                 View All Courses <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
@@ -180,19 +180,19 @@ export default function Home() {
                 image: "/images/hero-bg.png" // using hero bg as placeholder
               }
             ].map((course, i) => (
-              <div key={i} className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:border-white/20 transition-all hover:-translate-y-1">
+              <div key={i} className="group rounded-2xl overflow-hidden bg-white border border-sky-200 hover:border-sky-300 transition-all hover:-translate-y-1 shadow-sm">
                 <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-[#1E6FFF]/20 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity"></div>
-                  <img src={course.image} alt={course.title} className="w-full h-full object-cover grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" />
+                  <div className="absolute inset-0 bg-[#f97316]/10 z-10 group-hover:opacity-0 transition-opacity"></div>
+                  <img src={course.image} alt={course.title} className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105" />
                 </div>
                 <div className="p-6">
                   <div className="flex gap-2 mb-4">
-                    <span className="text-xs font-semibold px-2 py-1 rounded bg-[#1E6FFF]/10 text-[#1E6FFF]">{course.level}</span>
-                    <span className="text-xs font-semibold px-2 py-1 rounded bg-white/5 text-gray-300">{course.duration}</span>
+                    <span className="text-xs font-semibold px-2 py-1 rounded bg-[#f97316]/10 text-[#f97316]">{course.level}</span>
+                    <span className="text-xs font-semibold px-2 py-1 rounded bg-sky-100 text-slate-700">{course.duration}</span>
                   </div>
                   <h3 className="text-xl font-bold mb-4 line-clamp-2">{course.title}</h3>
                   <Link href={`/courses`}>
-                    <span className="inline-flex items-center text-sm text-gray-400 group-hover:text-white transition-colors cursor-pointer">
+                    <span className="inline-flex items-center text-sm text-slate-600 group-hover:text-slate-900 transition-colors cursor-pointer">
                       Program Details <ChevronRight className="ml-1 w-4 h-4" />
                     </span>
                   </Link>
@@ -204,11 +204,11 @@ export default function Home() {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="py-24" style={{ background: "#051830" }}>
-        <div className="container px-4 md:px-6 max-w-4xl">
+      <section className="py-24 bg-sky-50/60">
+        <div className="container px-4 md:px-6 max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-4">Mission Briefing: FAQ</h2>
-            <p className="text-gray-400 text-lg">Clear answers to operational queries.</p>
+            <p className="text-slate-600 text-lg">Clear answers to operational queries.</p>
           </div>
 
           <Accordion type="single" collapsible className="w-full space-y-4">
@@ -234,11 +234,11 @@ export default function Home() {
                 a: "Yes. We design custom training modules for enterprise teams, covering everything from basic flight operations to complex fleet management and data analytics."
               }
             ].map((faq, i) => (
-              <AccordionItem key={i} value={`item-${i}`} className="border px-6 rounded-lg data-[state=open]:border-[#1E6FFF]/50 transition-colors" style={{ borderColor: "rgba(30,111,255,0.2)", background: "rgba(13,47,110,0.3)" }}>
-                <AccordionTrigger className="text-left font-semibold text-white hover:text-[#1E6FFF] hover:no-underline py-4">
+              <AccordionItem key={i} value={`item-${i}`} className="border px-6 rounded-lg data-[state=open]:border-[#f97316]/50 transition-colors bg-white border-sky-200">
+                <AccordionTrigger className="text-left font-semibold text-slate-900 hover:text-[#f97316] hover:no-underline py-4">
                   {faq.q}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-400 pb-4 leading-relaxed">
+                <AccordionContent className="text-slate-600 pb-4 leading-relaxed">
                   {faq.a}
                 </AccordionContent>
               </AccordionItem>
@@ -249,16 +249,16 @@ export default function Home() {
 
       {/* CTA BANNER */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#1E6FFF]/10"></div>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#1E6FFF]/20 blur-[120px] rounded-full pointer-events-none"></div>
+        <div className="absolute inset-0 bg-sky-100/70"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#f97316]/20 blur-[120px] rounded-full pointer-events-none"></div>
         
         <div className="container relative z-10 px-4 md:px-6 text-center max-w-3xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready for Departure?</h2>
-          <p className="text-xl text-gray-300 mb-10">
+          <p className="text-xl text-slate-600 mb-10">
             Whether you're looking to advance your career or scale your enterprise drone operations, we have the strategic insight you need.
           </p>
           <Link href="/contact">
-            <Button size="lg" className="h-16 px-10 text-lg bg-[#1E6FFF] hover:bg-white hover:text-[#0A1628] text-white border-0 shadow-[0_0_30px_rgba(30,111,255,0.4)] transition-all">
+            <Button size="lg" className="h-16 px-10 text-lg bg-[#f97316] hover:bg-[#ea580c] text-white border-0 shadow-[0_0_30px_rgba(249,115,22,0.35)] transition-all">
               Book a Free Consultation
             </Button>
           </Link>

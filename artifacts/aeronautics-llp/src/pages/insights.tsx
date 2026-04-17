@@ -54,12 +54,12 @@ export default function Insights() {
   ];
 
   return (
-    <div className="pt-20 pb-24">
-      <section className="py-20 bg-[#070e1a] border-b border-white/5">
-        <div className="container px-4 md:px-6">
-          <div className="max-w-3xl">
+    <div className="pt-20 pb-24 bg-gradient-to-b from-sky-50 via-white to-sky-100 text-slate-900">
+      <section className="py-20 border-b border-sky-200" style={{ background: "linear-gradient(135deg, #f0f9ff 0%, #ffffff 55%, #e0f2fe 100%)" }}>
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Intelligence & Insights.</h1>
-            <p className="text-xl text-gray-400 leading-relaxed">
+            <p className="text-xl text-slate-600 leading-relaxed">
               Technical analysis, regulatory updates, and strategic perspectives from our aerospace experts.
             </p>
           </div>
@@ -67,27 +67,27 @@ export default function Insights() {
       </section>
 
       <section className="py-20">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, i) => (
-              <article key={i} className="group flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all hover:-translate-y-1">
+              <article key={i} className="group flex flex-col bg-white border border-sky-200 rounded-2xl overflow-hidden hover:border-[#f97316]/50 transition-all hover:-translate-y-1 shadow-sm text-slate-900">
                 <div className="h-56 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-[#0A1628]/40 group-hover:bg-transparent transition-colors z-10"></div>
+                  <div className="absolute inset-0 bg-sky-900/20 group-hover:bg-transparent transition-colors z-10"></div>
                   <img src={article.image} alt={article.title} className="w-full h-full object-cover scale-100 group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute top-4 left-4 z-20">
-                    <span className="px-3 py-1 bg-[#1E6FFF] text-white text-xs font-bold rounded shadow-lg backdrop-blur-md">
+                    <span className="px-3 py-1 bg-[#f97316] text-white text-xs font-bold rounded shadow-lg backdrop-blur-md">
                       {article.category}
                     </span>
                   </div>
                 </div>
                 <div className="p-6 flex flex-col flex-1">
-                  <div className="flex items-center gap-4 text-xs text-gray-400 mb-4">
+                  <div className="flex items-center gap-4 text-xs text-slate-500 mb-4">
                     <span className="flex items-center gap-1.5"><Calendar className="w-3 h-3" /> {article.date}</span>
                     <span className="flex items-center gap-1.5"><User className="w-3 h-3" /> {article.author}</span>
                   </div>
-                  <h2 className="text-xl font-bold mb-3 group-hover:text-[#1E6FFF] transition-colors">{article.title}</h2>
-                  <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-1">{article.excerpt}</p>
-                  <a href="#" className="inline-flex items-center text-sm font-semibold text-white group-hover:text-[#1E6FFF] transition-colors mt-auto">
+                  <h2 className="text-xl font-bold mb-3 group-hover:text-[#f97316] transition-colors">{article.title}</h2>
+                  <p className="text-slate-600 text-sm leading-relaxed mb-6 flex-1">{article.excerpt}</p>
+                  <a href="#" className="inline-flex items-center text-sm font-semibold text-[#0284c7] group-hover:text-[#f97316] transition-colors mt-auto">
                     Read Briefing <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>

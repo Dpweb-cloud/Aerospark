@@ -49,12 +49,12 @@ export default function Courses() {
   ];
 
   return (
-    <div className="pt-20 pb-24">
-      <section className="py-20 border-b" style={{ background: "#051830", borderColor: "rgba(30,111,255,0.12)" }}>
-        <div className="container px-4 md:px-6">
-          <div className="max-w-3xl">
+    <div className="pt-20 pb-24 bg-gradient-to-b from-sky-50 via-white to-sky-100 text-slate-900">
+      <section className="py-20 border-b" style={{ background: "linear-gradient(135deg, #f0f9ff 0%, #ffffff 55%, #e0f2fe 100%)", borderColor: "rgba(2,132,199,0.16)" }}>
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Training Programs.</h1>
-            <p className="text-xl text-gray-400 leading-relaxed">
+            <p className="text-xl text-slate-600 leading-relaxed">
               Rigorous, industry-aligned curriculum designed to forge elite aerospace professionals and skilled UAV operators.
             </p>
           </div>
@@ -62,30 +62,30 @@ export default function Courses() {
       </section>
 
       <section className="py-20">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((course, i) => (
-              <div key={i} className="flex flex-col bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-[#1E6FFF]/50 hover:bg-white/[0.07] transition-all group">
+              <div key={i} className="flex flex-col bg-white border border-sky-200 rounded-2xl p-8 hover:border-[#f97316]/45 hover:bg-sky-50/50 transition-all group shadow-sm">
                 <div className="flex gap-2 mb-6">
-                  <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[#1E6FFF]/10 text-[#1E6FFF] flex items-center gap-1.5">
+                  <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-[#f97316]/10 text-[#f97316] flex items-center gap-1.5">
                     <GraduationCap className="w-3 h-3" /> {course.level}
                   </span>
-                  <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-white/5 text-gray-300 flex items-center gap-1.5">
+                  <span className="text-xs font-semibold px-3 py-1.5 rounded-full bg-sky-100 text-slate-600 flex items-center gap-1.5">
                     <Clock className="w-3 h-3" /> {course.duration}
                   </span>
                 </div>
                 
                 <h2 className="text-2xl font-bold mb-4">{course.title}</h2>
-                <p className="text-gray-400 mb-8 flex-1">{course.desc}</p>
+                <p className="text-slate-600 mb-8 flex-1">{course.desc}</p>
                 
                 <div className="mb-8 space-y-3">
-                  <h4 className="text-sm font-semibold text-white flex items-center gap-2">
-                    <BookOpen className="w-4 h-4 text-[#1E6FFF]" /> Core Modules
+                  <h4 className="text-sm font-semibold text-slate-900 flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-[#0284c7]" /> Core Modules
                   </h4>
                   <ul className="grid grid-cols-2 gap-2">
                     {course.modules.map((mod, j) => (
-                      <li key={j} className="text-sm text-gray-400 flex items-center gap-2">
-                        <div className="w-1 h-1 rounded-full bg-[#1E6FFF]"></div>
+                      <li key={j} className="text-sm text-slate-600 flex items-center gap-2">
+                        <div className="w-1 h-1 rounded-full bg-[#0284c7]"></div>
                         {mod}
                       </li>
                     ))}
@@ -93,7 +93,7 @@ export default function Courses() {
                 </div>
                 
                 <Link href="/contact">
-                  <Button className="w-full bg-[#1E6FFF]/10 hover:bg-[#1E6FFF] text-[#1E6FFF] hover:text-white border border-[#1E6FFF]/20 transition-all group-hover:border-transparent">
+                  <Button className="w-full bg-[#f97316]/10 hover:bg-[#f97316] text-[#f97316] hover:text-white border border-[#f97316]/25 transition-all group-hover:border-transparent">
                     Request Syllabus <ChevronRight className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>
@@ -104,14 +104,14 @@ export default function Courses() {
       </section>
 
       <section className="py-12">
-        <div className="container px-4 md:px-6">
-          <div className="border border-[#1E6FFF]/30 rounded-3xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8" style={{ background: "linear-gradient(135deg, rgba(30,111,255,0.18), #071D40)" }}>
-            <div className="max-w-2xl">
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="border border-sky-300 rounded-3xl p-8 md:p-12 flex flex-col items-center text-center gap-8" style={{ background: "linear-gradient(135deg, rgba(2,132,199,0.12), rgba(249,115,22,0.08))" }}>
+            <div className="max-w-2xl mx-auto">
               <h2 className="text-3xl font-bold mb-4">Corporate & Enterprise Training</h2>
-              <p className="text-gray-300">Need to upskill your entire team? We offer customized cohort training for organizations deploying enterprise drone fleets or managing aerospace engineering projects.</p>
+              <p className="text-slate-600">Need to upskill your entire team? We offer customized cohort training for organizations deploying enterprise drone fleets or managing aerospace engineering projects.</p>
             </div>
             <Link href="/contact" className="shrink-0">
-              <Button size="lg" className="bg-[#1E6FFF] hover:bg-white text-white hover:text-[#071D40]">
+              <Button size="lg" className="bg-[#f97316] hover:bg-[#ea580c] text-white">
                 Discuss Enterprise Training
               </Button>
             </Link>

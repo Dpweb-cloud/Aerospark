@@ -25,12 +25,12 @@ export default function Contact() {
   };
 
   return (
-    <div className="pt-20 pb-24">
-      <section className="py-20 bg-[#070e1a] border-b border-white/5">
-        <div className="container px-4 md:px-6">
-          <div className="max-w-3xl">
+    <div className="pt-20 pb-24 bg-gradient-to-b from-sky-50 via-white to-sky-100 text-slate-900">
+      <section className="py-20 border-b border-sky-200" style={{ background: "linear-gradient(135deg, #f0f9ff 0%, #ffffff 55%, #e0f2fe 100%)" }}>
+        <div className="container px-4 md:px-6 mx-auto">
+          <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">Establish Contact.</h1>
-            <p className="text-xl text-gray-400 leading-relaxed">
+            <p className="text-xl text-slate-600 leading-relaxed">
               Ready to elevate your operations or advance your career? Send a transmission to our headquarters.
             </p>
           </div>
@@ -38,41 +38,41 @@ export default function Contact() {
       </section>
 
       <section className="py-20">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 mx-auto">
           <div className="grid lg:grid-cols-2 gap-16">
             
             {/* Contact Form */}
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-12">
+            <div className="bg-white border border-sky-200 rounded-2xl p-8 md:p-12 shadow-sm">
               <h2 className="text-2xl font-bold mb-6">Book a Free Consultation</h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-300">Full Name</label>
-                    <Input required placeholder="Jane Doe" className="bg-white/5 border-white/10 text-white focus-visible:ring-[#1E6FFF]" />
+                    <label className="text-sm font-medium text-slate-600">Full Name</label>
+                    <Input required placeholder="Jane Doe" className="bg-white border-sky-200 text-slate-900 focus-visible:ring-[#0284c7]" />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-sm font-medium text-gray-300">Email Address</label>
-                    <Input required type="email" placeholder="jane@example.com" className="bg-white/5 border-white/10 text-white focus-visible:ring-[#1E6FFF]" />
+                    <label className="text-sm font-medium text-slate-600">Email Address</label>
+                    <Input required type="email" placeholder="jane@example.com" className="bg-white border-sky-200 text-slate-900 focus-visible:ring-[#0284c7]" />
                   </div>
                 </div>
                 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-300">Subject / Intent</label>
-                  <select required className="flex h-10 w-full rounded-md border border-white/10 bg-white/5 px-3 py-2 text-sm text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1E6FFF]">
-                    <option value="" className="bg-[#0A1628]">Select Area of Interest</option>
-                    <option value="course" className="bg-[#0A1628]">Course Enrollment</option>
-                    <option value="consultancy" className="bg-[#0A1628]">Enterprise Consultancy</option>
-                    <option value="corporate" className="bg-[#0A1628]">Corporate Training</option>
-                    <option value="other" className="bg-[#0A1628]">Other Inquiry</option>
+                  <label className="text-sm font-medium text-slate-600">Subject / Intent</label>
+                  <select required className="flex h-10 w-full rounded-md border border-sky-200 bg-white px-3 py-2 text-sm text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0284c7]">
+                    <option value="" className="bg-white text-slate-900">Select Area of Interest</option>
+                    <option value="course" className="bg-white text-slate-900">Course Enrollment</option>
+                    <option value="consultancy" className="bg-white text-slate-900">Enterprise Consultancy</option>
+                    <option value="corporate" className="bg-white text-slate-900">Corporate Training</option>
+                    <option value="other" className="bg-white text-slate-900">Other Inquiry</option>
                   </select>
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-sm font-medium text-gray-300">Message Details</label>
-                  <Textarea required placeholder="Describe your operational needs or career goals..." className="min-h-[150px] bg-white/5 border-white/10 text-white focus-visible:ring-[#1E6FFF]" />
+                  <label className="text-sm font-medium text-slate-600">Message Details</label>
+                  <Textarea required placeholder="Describe your operational needs or career goals..." className="min-h-[150px] bg-white border-sky-200 text-slate-900 focus-visible:ring-[#0284c7]" />
                 </div>
 
-                <Button disabled={isSubmitting} type="submit" className="w-full bg-[#1E6FFF] hover:bg-[#1E6FFF]/90 text-white h-12">
+                <Button disabled={isSubmitting} type="submit" className="w-full bg-[#f97316] hover:bg-[#ea580c] text-white h-12">
                   {isSubmitting ? "Transmitting..." : (
                     <>Send Transmission <Send className="w-4 h-4 ml-2" /></>
                   )}
@@ -83,44 +83,44 @@ export default function Contact() {
             {/* Contact Info & Map */}
             <div className="space-y-12">
               <div>
-                <h3 className="text-xl font-bold mb-6 text-white">Headquarters</h3>
+                <h3 className="text-xl font-bold mb-6 text-slate-900">Headquarters</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
-                      <MapPin className="w-5 h-5 text-[#1E6FFF]" />
+                    <div className="w-12 h-12 rounded-lg bg-sky-100 flex items-center justify-center shrink-0">
+                      <MapPin className="w-5 h-5 text-[#f97316]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Command Center</h4>
-                      <p className="text-gray-400">Level 42, Tech Park Tower<br/>Aviation District, 10001</p>
+                      <h4 className="font-semibold text-slate-900 mb-1">Command Center</h4>
+                      <p className="text-slate-600">Level 42, Tech Park Tower<br/>Aviation District, 10001</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
-                      <Phone className="w-5 h-5 text-[#1E6FFF]" />
+                    <div className="w-12 h-12 rounded-lg bg-sky-100 flex items-center justify-center shrink-0">
+                      <Phone className="w-5 h-5 text-[#f97316]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Direct Line</h4>
-                      <p className="text-gray-400">+1 (800) 555-AERO<br/>Mon-Fri, 0900-1700 EST</p>
+                      <h4 className="font-semibold text-slate-900 mb-1">Direct Line</h4>
+                      <p className="text-slate-600">+1 (800) 555-AERO<br/>Mon-Fri, 0900-1700 EST</p>
                     </div>
                   </div>
                   
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-white/5 flex items-center justify-center shrink-0">
-                      <Mail className="w-5 h-5 text-[#1E6FFF]" />
+                    <div className="w-12 h-12 rounded-lg bg-sky-100 flex items-center justify-center shrink-0">
+                      <Mail className="w-5 h-5 text-[#f97316]" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-white mb-1">Electronic Mail</h4>
-                      <p className="text-gray-400">mission@aeronauticsllp.com<br/>support@aeronauticsllp.com</p>
+                      <h4 className="font-semibold text-slate-900 mb-1">Electronic Mail</h4>
+                      <p className="text-slate-600">mission@aeronauticsllp.com<br/>support@aeronauticsllp.com</p>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Map Placeholder */}
-              <div className="rounded-2xl overflow-hidden border border-white/10 h-64 bg-white/5 relative group">
-                <div className="absolute inset-0 flex items-center justify-center bg-[#0A1628]/50 z-10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
-                  <span className="font-semibold text-white">Interactive Map Disabled in Security Mode</span>
+              <div className="rounded-2xl overflow-hidden border border-sky-200 h-64 bg-white relative group">
+                <div className="absolute inset-0 flex items-center justify-center bg-sky-100/80 z-10 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="font-semibold text-slate-900">Interactive Map Disabled in Security Mode</span>
                 </div>
                 <img 
                   src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" 
@@ -129,8 +129,8 @@ export default function Contact() {
                 />
                 {/* Fake map UI elements */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
-                  <div className="w-6 h-6 bg-[#1E6FFF] rounded-full animate-ping absolute inset-0 opacity-50"></div>
-                  <div className="w-6 h-6 bg-[#1E6FFF] rounded-full border-2 border-white relative z-10 shadow-[0_0_15px_rgba(30,111,255,0.8)]"></div>
+                  <div className="w-6 h-6 bg-[#f97316] rounded-full animate-ping absolute inset-0 opacity-50"></div>
+                  <div className="w-6 h-6 bg-[#f97316] rounded-full border-2 border-white relative z-10 shadow-[0_0_15px_rgba(249,115,22,0.8)]"></div>
                 </div>
               </div>
             </div>
